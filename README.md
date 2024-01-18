@@ -1,5 +1,10 @@
 # Windy Grid World with Q-Learning
 
+## Artificial Intelligence I Assignment
+**Student:** [Seyed Emad Razavi](https://github.com/Emaaaad) (5782734)  
+**Professor:** Armando Tacchella 
+
+
 ## Project Overview
 This project implements a Q-learning agent to solve the Windy Grid World problem, a classical reinforcement learning challenge. The agent learns to navigate through a grid influenced by wind, aiming to reach a goal location in the minimum number of steps. The project demonstrates key concepts of reinforcement learning and Q-learning algorithm, and provides insightful visualizations of the policy and value functions.
 
