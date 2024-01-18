@@ -23,7 +23,7 @@ In the Windy Grid World:
 
 - **Interactive Visualizations**: To provide a clear and intuitive understanding of the agent's learning progress and the effectiveness of the developed policy, this project incorporates two main visualizations:
    - **Q-values Heatmap**: This visualization represents the grid with colors indicating the Q-value of each state. The varying shades provide insights into the potential of each state, guiding the agent's decisions. States with higher Q-values are deemed more desirable, as they are expected to yield higher returns.
-   - **Policy Table with Color-Coded Squares and Arrows**: This intuitive visualization provides a policy overview, with each cell in the grid colored based on the best action to take from that state. Overlaid arrows indicate the direction of the recommended action, offering a quick and informative view of the policy. The combination of color-coding and arrows succinctly demonstrates the strategy learned by the agent, making the policy's dynamics easily understandable.
+   - **Policy Grid Visualization and Arrows**: This intuitive visualization provides a policy overview, with each cell in the grid colored based on the best action to take from that state. Overlaid arrows indicate the direction of the recommended action, offering a quick and informative view of the policy. The combination of color-coding and arrows succinctly demonstrates the strategy learned by the agent, making the policy's dynamics easily understandable.
 
 ## Getting Started
 
@@ -55,8 +55,43 @@ The project incorporates sophisticated visual tools to elucidate the learning pr
 
 - **Q-values Heatmap**: This visualization is a cornerstone in illustrating the agent's valuation of each state within the grid. Each cell's color intensity represents the Q-value, which is a measure of the expected utility of taking the best action from that state. A gradient color scheme is employed to depict this, with warmer colors indicating higher Q-values. This heatmap provides a comprehensive view of the agent's learned evaluations, revealing the most promising paths and strategies, as well as the potential pitfalls or less favorable routes. By observing how the Q-values evolve over training episodes, one can gain deep insights into the learning progression and the refinement of the agent's strategy.
 
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/QVH.jpg" alt="Q-values Heatmap">
+</div>
+
+This heatmap represents the Q-values for each state. States with warmer colors have higher Q-values, indicating they are more promising in terms of expected return. This visualization helps in understanding the agent's assessment of each state's potential.
+
+
 - **Policy Grid Visualization**: This sophisticated visualization conveys the essence of the learned policy in a direct and interpretable manner. Each cell in the grid is color-coded and contains an arrow; the color signifies the best action to take from that state, and the arrow indicates the direction of the action. This dual coding (color and arrow) offers an immediate, clear understanding of the recommended actions at a glance. For instance, a cell with a specific color and an upward arrow would mean that the best action from that state, according to the learned policy, is to move upwards. This visualization not only serves as a quick reference to the agent's strategy but also illustrates the influence of environmental factors, like wind, on the policy. It's particularly useful for verifying the rationality of the learned policy and for identifying any peculiar behaviors or patterns that might warrant further investigation or optimization.
 
+ 
+
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/PGV.jpg" alt="Policy Grid Visualization">
+</div>
+
+This grid shows the best action to take from each state, color-coded for clarity, with arrows indicating the direction. It provides an intuitive view of the policy, demonstrating the agent's learned strategy to navigate through the grid effectively, considering the wind's influence.
+
+## Training Performance Analysis
+
+### Total Rewards per Episode
+The "Total Rewards per Episode" graph provides a visual representation of the rewards accumulated by the agent in each episode during the training phase. This metric is crucial as it reflects the agent's performance and learning progression over time. A positive trend in this graph indicates that the agent is improving its strategy, learning to maximize rewards by making more effective decisions. Ideally, we expect to see an upward trend, signifying that the agent is learning to navigate the Windy Grid World more proficiently, achieving higher rewards as it learns to reach the goal more efficiently.
+
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/STE.jpg" alt="Total Rewards per Episode">
+</div>
+
+The graph above illustrates the rewards accumulated by the agent in each episode during training. As the agent explores the environment and learns the optimal policy, we expect to see an upward trend in total rewards, indicating improved performance and more efficient decision-making. Consistent improvement in this metric demonstrates the agent's increasing proficiency in achieving its objective under the influence of wind forces in the grid.
+
+### Steps Taken per Episode
+
+The "Steps Taken per Episode" graph illustrates the number of steps the agent took to reach the goal in each episode. This measure directly reflects the efficiency of the agent's policy; fewer steps indicate a more optimal path to the goal. Initially, the agent may take more steps, exploring the environment and learning the effects of actions. As learning progresses, we expect to see a decrease in the number of steps per episode, demonstrating that the agent is refining its policy, learning to avoid unnecessary moves, and taking the most direct path to the goal, despite the challenges introduced by the wind forces in the grid.
+
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/TRE.jpg" alt="Steps Taken per Episode">
+</div>
+
+In the graph above, a downward trend in the number of steps taken per episode is desirable. It indicates that the agent is learning to find more direct and efficient paths to the goal. Initially, the agent might take more steps due to exploration and lack of knowledge about the environment. However, as learning progresses and the agent refines its policy, the number of steps should decrease, signifying a more optimal strategy and better adaptation to the windy conditions of the grid.
 
 
 ## Customization
