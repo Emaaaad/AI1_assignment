@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 from environment import WindyGridWorld
 from q_learning import q_learning
-from visualization import visualize_q_values_on_axes, visualize_policy_table_on_axes
+from visualization import visualize_q_values_on_axes, visualize_policy_grade_on_axes
 
 
 # Create an instance of the environment
@@ -73,8 +73,8 @@ axs[1].grid(True)
 # Visualize the Q-values as colored squares
 visualize_q_values_on_axes(q_values, axs[2])
 
-# Visualize the policy table with colored squares
-visualize_policy_table_on_axes(optimal_policy, axs[3])
+# Visualize the policy grade with colored squares
+visualize_policy_grade_on_axes(optimal_policy, axs[3])
 
 # Display the plots
 plt.tight_layout(pad=3.0)

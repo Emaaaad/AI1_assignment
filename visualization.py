@@ -25,7 +25,7 @@ def visualize_q_values_on_axes(q_values, ax):
     ax.set_xticks(np.arange(q_values.shape[1]))
     ax.set_yticks(np.arange(q_values.shape[0]))
 
-def visualize_policy_table_on_axes(policy, ax):
+def visualize_policy_grade_on_axes(policy, ax):
     ax.clear()
     action_values = {
         0: 0.25,  # Up
@@ -58,4 +58,4 @@ def visualize_policy_table_on_axes(policy, ax):
     ax.set_yticks(np.arange(policy.shape[0]) - 0.5, minor=True)
     ax.grid(which='minor', color='black', linestyle='-', linewidth=2)
     ax.tick_params(axis=u'both', which=u'both', length=0)  # Hide the tick marks
-    ax.set_title('Policy Table Visualization')
+    ax.set_title('Policy Grade Visualization')
