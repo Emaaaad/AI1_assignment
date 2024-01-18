@@ -25,6 +25,25 @@ In the Windy Grid World:
    - **Q-values Heatmap**: This visualization represents the grid with colors indicating the Q-value of each state. The varying shades provide insights into the potential of each state, guiding the agent's decisions. States with higher Q-values are deemed more desirable, as they are expected to yield higher returns.
    - **Policy Grid Visualization and Arrows**: This intuitive visualization provides a policy overview, with each cell in the grid colored based on the best action to take from that state. Overlaid arrows indicate the direction of the recommended action, offering a quick and informative view of the policy. The combination of color-coding and arrows succinctly demonstrates the strategy learned by the agent, making the policy's dynamics easily understandable.
 
+
+## Project Diagram
+
+The project diagram below illustrates the core components and their interactions within the Windy Grid World environment. It provides a high-level overview of the system architecture, emphasizing the agent's interaction with the environment, the role of the Q-learning algorithm in policy development, and the feedback loop through which the agent learns and adapts its strategy over time.
+
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/diagram.jpg" alt="Project Diagram">
+</div>
+
+### Understanding the Diagram
+- **Environment (Windy Grid World)**: Represents the grid-based environment where each cell corresponds to a state. Windy columns exert an upward force, adding complexity to the agent's navigation.
+- **Agent**: The decision-maker that explores the environment, making moves with the objective of reaching the goal efficiently.
+- **Q-Table**: A tabular representation of Q-values, quantifying the expected utility of taking certain actions from specific states.
+- **Policy**: Derived from the Q-Table, the policy dictates the agent's action selection in each state, aiming to maximize the cumulative reward.
+- **Rewards and Episodes**: Rewards provide feedback for the agent's actions, guiding the learning process. Each episode represents a complete run from start to goal, allowing the agent to learn and improve its policy iteratively.
+
+This diagram encapsulates the dynamic and adaptive nature of the agent's learning process within the Windy Grid World, offering a visual representation of the theoretical concepts that underpin the project's functionality.
+
+
 ## Getting Started
 
 ### Prerequisites
