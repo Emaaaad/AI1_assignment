@@ -9,6 +9,7 @@ class WindyGridWorld:
         self.goal = (3, 7)
         self.actions = [(-1, 0), (1, 0), (0, -1), (0, 1)]  # Up, Down, Left, Right
 
+
     def move(self, state, action):
         r, c = state
         dr, dc = self.actions[action]

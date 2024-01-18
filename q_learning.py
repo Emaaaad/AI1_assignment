@@ -11,6 +11,7 @@ def q_learning(env, num_episodes, alpha, gamma, epsilon):
             else:
                 action = np.argmax(q_values[state])  # Exploit
 
+
             next_state, reward = env.move(state, action)
             q_values[state][action] += alpha * (reward + gamma * np.max(q_values[next_state]) - q_values[state][action])
             state = next_state

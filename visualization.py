@@ -13,6 +13,7 @@ def action_to_arrow(action):
     }
     return mapping.get(action, '?')  # Return '?' if action is not in the mapping
 
+
 def visualize_q_values_on_axes(q_values, ax):
     ax.clear()
     best_q_values = np.max(q_values, axis=2)

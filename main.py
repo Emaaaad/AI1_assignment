@@ -15,6 +15,7 @@ from visualization import visualize_q_values_on_axes, visualize_policy_grade_on_
 wind_strength = [0, 0, 0, 1, 1, 1, 2, 2, 1, 0]
 env = WindyGridWorld(10, 7, wind_strength)
 
+
 # Parameters
 num_episodes = 500
 alpha = 0.1  # learning rate
