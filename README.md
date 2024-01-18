@@ -55,8 +55,15 @@ The project incorporates sophisticated visual tools to elucidate the learning pr
 
 - **Q-values Heatmap**: This visualization is a cornerstone in illustrating the agent's valuation of each state within the grid. Each cell's color intensity represents the Q-value, which is a measure of the expected utility of taking the best action from that state. A gradient color scheme is employed to depict this, with warmer colors indicating higher Q-values. This heatmap provides a comprehensive view of the agent's learned evaluations, revealing the most promising paths and strategies, as well as the potential pitfalls or less favorable routes. By observing how the Q-values evolve over training episodes, one can gain deep insights into the learning progression and the refinement of the agent's strategy.
 
+![Q-values Heatmap]( https://github.com/Emaaaad/AI1_assignment/blob/master/images/QVH.jpg "Q-values Heatmap")
+This heatmap represents the Q-values for each state. States with warmer colors have higher Q-values, indicating they are more promising in terms of expected return. This visualization helps in understanding the agent's assessment of each state's potential.
+
+
 - **Policy Grid Visualization**: This sophisticated visualization conveys the essence of the learned policy in a direct and interpretable manner. Each cell in the grid is color-coded and contains an arrow; the color signifies the best action to take from that state, and the arrow indicates the direction of the action. This dual coding (color and arrow) offers an immediate, clear understanding of the recommended actions at a glance. For instance, a cell with a specific color and an upward arrow would mean that the best action from that state, according to the learned policy, is to move upwards. This visualization not only serves as a quick reference to the agent's strategy but also illustrates the influence of environmental factors, like wind, on the policy. It's particularly useful for verifying the rationality of the learned policy and for identifying any peculiar behaviors or patterns that might warrant further investigation or optimization.
 
+- 
+![Policy Grid Visualization](https://github.com/Emaaaad/AI1_assignment/blob/master/images/PGV.jpg "Policy Grid Visualization")
+This grid shows the best action to take from each state, color-coded for clarity, with arrows indicating the direction. It provides an intuitive view of the policy, demonstrating the agent's learned strategy to navigate through the grid effectively, considering the wind's influence.
 
 
 ## Customization
