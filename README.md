@@ -72,6 +72,27 @@ This heatmap represents the Q-values for each state. States with warmer colors h
 
 This grid shows the best action to take from each state, color-coded for clarity, with arrows indicating the direction. It provides an intuitive view of the policy, demonstrating the agent's learned strategy to navigate through the grid effectively, considering the wind's influence.
 
+## Training Performance Analysis
+
+### Total Rewards per Episode
+The "Total Rewards per Episode" graph provides a visual representation of the rewards accumulated by the agent in each episode during the training phase. This metric is crucial as it reflects the agent's performance and learning progression over time. A positive trend in this graph indicates that the agent is improving its strategy, learning to maximize rewards by making more effective decisions. Ideally, we expect to see an upward trend, signifying that the agent is learning to navigate the Windy Grid World more proficiently, achieving higher rewards as it learns to reach the goal more efficiently.
+
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/STE.jpg" alt="Total Rewards per Episode">
+</div>
+
+The graph above illustrates the rewards accumulated by the agent in each episode during training. As the agent explores the environment and learns the optimal policy, we expect to see an upward trend in total rewards, indicating improved performance and more efficient decision-making. Consistent improvement in this metric demonstrates the agent's increasing proficiency in achieving its objective under the influence of wind forces in the grid.
+
+### Steps Taken per Episode
+
+The "Steps Taken per Episode" graph illustrates the number of steps the agent took to reach the goal in each episode. This measure directly reflects the efficiency of the agent's policy; fewer steps indicate a more optimal path to the goal. Initially, the agent may take more steps, exploring the environment and learning the effects of actions. As learning progresses, we expect to see a decrease in the number of steps per episode, demonstrating that the agent is refining its policy, learning to avoid unnecessary moves, and taking the most direct path to the goal, despite the challenges introduced by the wind forces in the grid.
+
+<div align="center">
+    <img src="https://github.com/Emaaaad/AI1_assignment/blob/master/images/TRE.jpg" alt="Steps Taken per Episode">
+</div>
+
+In the graph above, a downward trend in the number of steps taken per episode is desirable. It indicates that the agent is learning to find more direct and efficient paths to the goal. Initially, the agent might take more steps due to exploration and lack of knowledge about the environment. However, as learning progresses and the agent refines its policy, the number of steps should decrease, signifying a more optimal strategy and better adaptation to the windy conditions of the grid.
+
 
 ## Customization
 You can adjust the environment and learning parameters in 'main.py' to experiment with different settings and observe how they affect the agent's learning process and performance.
