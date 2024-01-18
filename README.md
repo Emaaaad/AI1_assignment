@@ -55,7 +55,7 @@ The project incorporates sophisticated visual tools to elucidate the learning pr
 
 - **Q-values Heatmap**: This visualization is a cornerstone in illustrating the agent's valuation of each state within the grid. Each cell's color intensity represents the Q-value, which is a measure of the expected utility of taking the best action from that state. A gradient color scheme is employed to depict this, with warmer colors indicating higher Q-values. This heatmap provides a comprehensive view of the agent's learned evaluations, revealing the most promising paths and strategies, as well as the potential pitfalls or less favorable routes. By observing how the Q-values evolve over training episodes, one can gain deep insights into the learning progression and the refinement of the agent's strategy.
 
-![Q-values Heatmap]( https://github.com/Emaaaad/AI1_assignment/blob/master/images/QVH.jpg "Q-values Heatmap")
+                                                       ![Q-values Heatmap]( https://github.com/Emaaaad/AI1_assignment/blob/master/images/QVH.jpg "Q-values Heatmap")
 This heatmap represents the Q-values for each state. States with warmer colors have higher Q-values, indicating they are more promising in terms of expected return. This visualization helps in understanding the agent's assessment of each state's potential.
 
 
