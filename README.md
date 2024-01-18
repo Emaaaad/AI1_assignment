@@ -51,10 +51,12 @@ python3 main.py
 
 ## Visualizations
 
-The project includes two key visualizations:
+The project incorporates sophisticated visual tools to elucidate the learning process and the resulting policy in a visually intuitive manner. These visualizations are pivotal in understanding the complex dynamics of the agent's decision-making process and the environmental challenges it faces.
 
-1. **Q-values Heatmap**: Displays the value of each state, providing insight into the agent's assessment of each state's potential.
-2. **Policy Table**: Shows the best action at each state with color-coded squares and overlaid arrows, offering an intuitive view of the policy.
+- **Q-values Heatmap**: This visualization is a cornerstone in illustrating the agent's valuation of each state within the grid. Each cell's color intensity represents the Q-value, which is a measure of the expected utility of taking the best action from that state. A gradient color scheme is employed to depict this, with warmer colors indicating higher Q-values. This heatmap provides a comprehensive view of the agent's learned evaluations, revealing the most promising paths and strategies, as well as the potential pitfalls or less favorable routes. By observing how the Q-values evolve over training episodes, one can gain deep insights into the learning progression and the refinement of the agent's strategy.
+
+- **Policy Grid Visualization**: This sophisticated visualization conveys the essence of the learned policy in a direct and interpretable manner. Each cell in the grid is color-coded and contains an arrow; the color signifies the best action to take from that state, and the arrow indicates the direction of the action. This dual coding (color and arrow) offers an immediate, clear understanding of the recommended actions at a glance. For instance, a cell with a specific color and an upward arrow would mean that the best action from that state, according to the learned policy, is to move upwards. This visualization not only serves as a quick reference to the agent's strategy but also illustrates the influence of environmental factors, like wind, on the policy. It's particularly useful for verifying the rationality of the learned policy and for identifying any peculiar behaviors or patterns that might warrant further investigation or optimization.
+
 
 
 ## Customization
