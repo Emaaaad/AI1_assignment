@@ -16,9 +16,14 @@ In the Windy Grid World:
 - The agent employs RL algorithms like **Q-learning** to learn the value of actions in states, refining its policy to effectively navigate the grid considering the wind's influence.
 
 ## Features
-- **Windy Grid World Environment**: Customizable grid environment with variable wind forces.
-- **Q-Learning Algorithm**: Implementation of the Q-learning algorithm for policy learning.
-- **Interactive Visualizations**: Includes a Q-values heatmap and a policy table with color-coded squares and arrows for a clear understanding of the learned policy.
+
+- **Windy Grid World Environment**: This project simulates the Windy Grid World, a classic grid-based environment where each cell represents a distinct state. The agent's objective is to navigate from a starting point to a goal location. What makes this environment challenging and unique is the presence of wind in certain columns, which exerts an upward force on the agent, thereby affecting its movement. This necessitates strategic planning and learning by the agent to reach the goal efficiently. The environment is highly customizable, allowing for adjustments in grid size, wind strength, and the placement of start and goal states, making it a versatile tool for studying the nuances of reinforcement learning.
+
+- **Q-Learning Algorithm**: At the heart of the agent's learning process is the Q-learning algorithm, a model-free, off-policy algorithm used in reinforcement learning. This algorithm enables the agent to learn the value of actions in each state, thus developing a policy that guides the agent to take the action with the highest expected reward. Over successive episodes of exploration and learning, the Q-learning algorithm iteratively updates the Q-values based on the rewards received, converging towards an optimal policy that navigates the agent effectively through the windy grid, despite the environmental challenges.
+
+- **Interactive Visualizations**: To provide a clear and intuitive understanding of the agent's learning progress and the effectiveness of the developed policy, this project incorporates two main visualizations:
+   - **Q-values Heatmap**: This visualization represents the grid with colors indicating the Q-value of each state. The varying shades provide insights into the potential of each state, guiding the agent's decisions. States with higher Q-values are deemed more desirable, as they are expected to yield higher returns.
+   - **Policy Table with Color-Coded Squares and Arrows**: This intuitive visualization provides a policy overview, with each cell in the grid colored based on the best action to take from that state. Overlaid arrows indicate the direction of the recommended action, offering a quick and informative view of the policy. The combination of color-coding and arrows succinctly demonstrates the strategy learned by the agent, making the policy's dynamics easily understandable.
 
 ## Getting Started
 
