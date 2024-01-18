@@ -21,14 +21,24 @@ You can install the necessary libraries using pip:
 pip install numpy matplotlib
 ```
 
-## Installation
+### Installation
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/Emaaaad/AI1_assignment.git
 ```
-## Usage
+### Usage
 Navigate to the project directory and run the main script:
 ```bash
 python3 main.py
 ```
 
+## Visualizations
+
+The project includes two key visualizations:
+
+1. **Q-values Heatmap**: Displays the value of each state, providing insight into the agent's assessment of each state's potential.
+2. **Policy Table**: Shows the best action at each state with color-coded squares and overlaid arrows, offering an intuitive view of the policy.
+
+
+## Customization
+You can adjust the environment and learning parameters in 'main.py' to experiment with different settings and observe how they affect the agent's learning process and performance.
